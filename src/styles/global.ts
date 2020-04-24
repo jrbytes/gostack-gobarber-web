@@ -26,4 +26,17 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  @-webkit-keyframes autofill {
+    0%,100% {
+      color: #666;
+      background: transparent;
+    }
+  }
+
+  input:-webkit-autofill {
+    -webkit-animation-delay: 1s;
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+  }
 `
